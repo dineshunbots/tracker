@@ -1,0 +1,29 @@
+<ion-header >
+  <ion-toolbar mode="ios">
+
+
+      <div class="col-md-4 col-xl-3">
+        <div class="card bg-c-green order-card">
+            <div class="card-block">
+              <h6 class="m-b-20">Welcome USER</h6>
+                <h6 class="m-b-20"><ion-avatar class="ion-avatar-logo" ><img alt="" src="{{logoImg}}" /></ion-avatar></h6>
+
+            </div>
+        </div>
+    </div>
+
+
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen="true">
+  <ion-list class="ion-padding-top" lines="none">
+    <ion-menu-toggle auto-hide="false" *ngFor="let menu of menus">
+      <ion-item [routerDirection]="'root'"  href="/">
+        <ion-icon color="color1" size="small" slot="start" [name]="menu.icon"></ion-icon>
+        <ion-label>
+          {{ menu.title }}
+        </ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+  </ion-list>
+</ion-content>

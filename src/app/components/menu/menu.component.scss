@@ -1,0 +1,75 @@
+ion-item{
+  border: 1px solid var(--ion-color-light);
+  border-radius: 10px;
+}
+
+.profile-img-container {
+  justify-content: center;
+  display: flex;
+}
+
+.ion-avatar-logo {
+  --border-radius: 4px;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+}
+body{
+  margin-top:20px;
+  background:#FAFAFA;
+}
+.order-card {
+  color: #fff;
+}
+
+.bg-c-blue {
+  background: linear-gradient(45deg,#4099ff,#73b4ff);
+}
+
+.bg-c-green {
+  background: linear-gradient(45deg,#41e678,#78ebb1);
+}
+
+.bg-c-yellow {
+  background: linear-gradient(45deg,#FFB64D,#ffcb80);
+}
+
+.bg-c-pink {
+  background: linear-gradient(45deg,#FF5370,#ff869a);
+}
+
+
+.card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+  box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+  border: none;
+  // margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .card-block {
+  padding: 25px;
+}
+
+.order-card i {
+  font-size: 26px;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+.card-content{
+  font-size: 20px;
+}
+ion-button[shape=circle] {
+  --border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+

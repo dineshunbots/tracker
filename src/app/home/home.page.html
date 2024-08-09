@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary">
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-capitalize" color="primary">
+      Tracker
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon name="log-out" size="large" color="primary"></ion-icon>
+
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content [fullscreen]="true">
+
+<ion-content [fullscreen]="true">
+
+  <ion-card *ngFor="let product of events">
+    <ion-card-header>
+      <ion-card-title style="font-size: 30px;color:black;">{{product.name}}</ion-card-title>
+      <ion-card-subtitle>{{product.imei}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content style="font-size: 17px;">
+      <span style="font-weight: bold;">Device ID:</span> {{product.id}}<br>
+      <span style="font-weight: bold;">Timezone:</span> {{product.timezone}}<br>
+      <ion-button expand="block" (click)="myclick(product.id)">View</ion-button>
+
+    </ion-card-content>
+
+
+  </ion-card>
+
+
+</ion-content>

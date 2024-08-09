@@ -1,0 +1,57 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content class="bg-dark">
+  <ion-progress-bar value="1" type="indeterminate" [hidden]="progressBar"></ion-progress-bar>
+
+
+  <div class="login-form ion-text-start">
+
+
+    <ion-text color="primary">
+      <h4>Sign In</h4>
+    </ion-text>
+    <ion-text color="medium">
+      <p>Enter your Email and password to access your account.</p>
+    </ion-text>
+
+    <form [formGroup]="loginForm" novalidate (ngSubmit)="loginSubmit()">
+      <ion-list mode="md" lines="none">
+        <ion-item lines="none">
+          <ion-icon slot="start" name="mail" color="primary" size="large" class="slotficon"></ion-icon>
+          <ion-label position="floating" color="primary"  >Email</ion-label>
+          <ion-input placeholder="Enter your email" type="email" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item lines="none" class="ion-margin-top">
+          <ion-icon slot="start" name="lock-closed" color="primary" size="large" class="slotficon"></ion-icon>
+          <ion-label position="floating" color="primary">Password</ion-label>
+          <ion-input [type]="this.passwordType" placeholder="Enter your password" formControlName="password"></ion-input>
+          <ion-icon slot="end" class="ion-margin-top" [name]="this.eyeOrOff" (click)="passwordToggle($event)"
+            color="primary" size="large" >
+          </ion-icon>
+        </ion-item>
+        <div class="ion-margin-top ion-text-right">
+          <ion-text color="medium">
+            <p>Forgot your password? </p>
+          </ion-text>
+        </div>
+        <div class="ion-margin-top">
+          <ion-button expand="block" type="submit">
+            <ion-icon name="log-out" size="large"></ion-icon> Login
+          </ion-button>
+        </div>
+        <div class="ion-margin-top ion-text-center">
+          <ion-button color="light" fill="outline" routerLink="/register">
+            <ion-text color="medium">
+              <p>Don't have an account? <b>Sign Up</b></p>
+            </ion-text>
+          </ion-button>
+        </div>
+
+      </ion-list>
+    </form>
+  </div>
+</ion-content>

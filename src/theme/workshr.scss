@@ -1,0 +1,32 @@
+.logo-container{
+  margin-top: 15%;
+}
+
+.login-form, .register-form {
+  margin-top: 5%;
+  padding: 20px;
+  ion-item {
+    border: 1px solid var(--ion-color-primary);
+    border-radius: 10px;
+    .slotficon {
+      margin-right: 15px !important;
+    }
+    // ::slotted(ion-icon[slot="start"]) {
+    //   margin-right: 15px !important;
+    // }
+  }
+
+}
+
+.profile-form {
+  padding: 10px;
+  ion-item {
+    border: 1px solid var(--ion-color-primary);
+    border-radius: 10px;
+    .slotficon {
+      margin-right: 15px !important;
+    }
+  }
+
+}
+
